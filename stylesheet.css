@@ -1,31 +1,42 @@
-#banner { 
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+.banner { 
     clear: both;
     width: 100%;
 }
 
-#logo {
-    display: block;
-    width: 125px;
-    height: 125px;
-    margin-top: -150px;
-    margin-left: 50px;
-    margin-bottom: 150px;
+.banner img {
+    width: 100%;
+}
 
+.logo {
+    display: block;
+    width: 110px;
+    margin-top: -50px;
+    margin-left: 100px;
+}
+
+.logo img {
+    width: 100%;
+    border-radius: 50%
 }
 
 .left {
+    margin-left: 100px;
     font-family: Arial;
-    position: relative;
+    color: dimgray;
     display: inline-block;
     vertical-align: top;
-    width: 25%;
+    width: 23%;
     overflow: auto;
 }
 
 .middle {
     display: inline-block;
     vertical-align: top;
-    width: 50%;
+    width: 45%;
     overflow: auto;
 }
 
@@ -35,20 +46,25 @@ a:visited {
 
 .right {
     display: block;
-    width: 25%;
     font-family: Arial;
     font-size: 0.75em;
-    float: right;
-    margin-left: 800px;
     margin-right: 0px;
     position: fixed;
-    top: 600px;
-    bottom: 0;
+    top: 500px;
     right: 0;
-    width: 250px;
-    height: 125px;
+    width: 275px;
+    height: 110px;
     border: 1px solid black;
-    overflow: auto;
+    padding: 2px;
+}
+
+.right img {
+    padding: 2px;
+    margin-bottom: 5px;
+    width: 23%;
+    border: 1px solid black;
+    border-radius: 50%;
+    float: left;
 }
 
 button {
